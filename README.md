@@ -35,7 +35,7 @@ Type: `string`
 
 Default: `'relative'`
 
-The mode of transform. When `'absolute'` is specified, this plugin transform the path of url to absolute.
+The mode of transform. When `'absolute'` is specified, this plugin transforms the path of url to absolute.
 
 #### options.base
 
