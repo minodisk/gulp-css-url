@@ -1,0 +1,23 @@
+.test1 {
+  url(/image.jpg)
+}
+
+.test2 {
+  url(/path/image.jpg)
+}
+
+.test3 {
+  url(/path/to/image.jpg)
+}
+
+.test1 {
+  url("/image.jpg")
+}
+
+.test2 {
+  url("/path/image.jpg")
+}
+
+.test3 {
+  url("/path/to/image.jpg")
+}
