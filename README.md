@@ -1,4 +1,4 @@
-# [gulp](http://gulpjs.com)-css-cache-bust [![NPM version][npm-image]][npm-url] [![Build status][travis-image]][travis-url] [![Coverage Status][coveralls-image]][coveralls-url]
+# [gulp](http://gulpjs.com)-css-cache-bust [![NPM version][npm-image]][npm-url]
 
 > Transforms the path of `url()` to relative or absolute
 
