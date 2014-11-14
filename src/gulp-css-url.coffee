@@ -27,7 +27,7 @@ module.exports = (opts = {}) ->
           return
 
         if file.isBuffer()
-          cssPath = file.base
+          cssPath = dirname file.path
           css = file.contents.toString()
           css = css.replace /url\s*\(\s*['"]?(\/.*?)['"]?\s*\)/g, (matched, absPath) ->
             imagePath = resolve rootPath, ".#{absPath}"
