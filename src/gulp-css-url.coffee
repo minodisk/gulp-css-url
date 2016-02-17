@@ -29,7 +29,7 @@ module.exports = (opts = {}) ->
         if file.isBuffer()
           cssPath = dirname file.path
           css = file.contents.toString()
-          css = css.replace /url\s*\(\s*['"]?(\/.*?)['"]?\s*\)/g, (matched, absPath) ->
+          css = css.replace /url\s*\(\s*(?!["']?data:)([^\)]+)\)/g, (matched, absPath) ->
             imagePath = resolve rootPath, ".#{absPath}"
             relPath = relative cssPath, imagePath
             """url("#{relPath}")"""
@@ -50,7 +50,7 @@ module.exports = (opts = {}) ->
         if file.isBuffer()
           cssPath = file.base
           css = file.contents.toString()
-          css = css.replace /url\s*\(\s*['"]?([^\/].*?)['"]?\s*\)/g, (matched, relPath) ->
+          css = css.replace /url\s*\(\s*(?!["']?data:)([^\)]+)\)/g, (matched, relPath) ->
             imagePath = resolve cssPath, relPath
             absPath = relative rootPath, imagePath
             """url("/#{absPath}")"""
