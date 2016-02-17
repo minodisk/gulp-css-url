@@ -1,6 +1,6 @@
 {
   "name": "gulp-css-url",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "Transform the path of url() to relative or absolute",
   "keywords": [
     "gulpplugin",
